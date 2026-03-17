@@ -1,0 +1,47 @@
+# Optical Mark Reader (OMR) Checker
+
+This project is an **Optical Mark Reader (OMR) program** that checks whether bubbles on a form are filled in and outputs the results in a structured table format.
+
+---
+
+## Project Overview
+
+- The program **scans an OMR sheet** and determines which answers are marked as filled.  
+- It then compares the answers to the **answer key** and prints the results for each page.
+
+- 
+---
+
+## How It Works
+
+1. The program **reads an OMR PDF** file containing the answers.  
+2. It detects which bubbles are **filled in**.  
+3. Each question is evaluated as **right** or **wrong** based on a predefined answer key.  
+4. The results are **printed page by page**, along with the total number of correct answers per page.  
+
+---
+
+## How to Run
+
+1. Go to the **`assets`** folder in the project.  
+2. Make sure the file **`opticalmarkreader.pdf`** is present.  
+3. Run the program in your IDE (IntelliJ, Eclipse, or Processing if used).  
+4. The program will output the results in the **console** in the format described above.  
+
+---
+
+## Output Format
+
+- **page** → the page number of the OMR sheet.  
+- **# right** → the number of questions answered correctly on that page.  
+- **q1–q12** → each question’s result (`right` or `wrong`).  
+
+This makes it easy to **track scores** and **analyze results quickly**.  
+
+---
+
+## Notes
+
+- Make sure the OMR PDF is **properly formatted** so the program can detect filled bubbles accurately.  
+- The program assumes a **12-question layout per page**, but it can be adjusted in the code.  
+- Any blank or unclear marks may be counted as **wrong**.  
